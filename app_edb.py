@@ -26,9 +26,9 @@ async def realizar_tareas(lista, numTareas):
 
 
 @timer(1,1)
-def main(valorInicial, numSolic):
-    valorDnmc = valorInicial
-    contador = numSolic
+def main():
+    valorDnmc = "000000"
+    contador = 1000
     longBloqS = 20
     
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
