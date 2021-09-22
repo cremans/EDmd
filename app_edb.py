@@ -21,7 +21,7 @@ async def solicitar(session, url):
 
 async def realizar_tareas(lista, numTareas):
     async with aiohttp.ClientSession() as session:
-        tareas = [solicitar(session, lista[i]) for i in range(numTareas)]
+        tareas = [solicitar(session,eb.url + lista[i]) for i in range(numTareas)]
         await asyncio.gather(*tareas)
 
 
