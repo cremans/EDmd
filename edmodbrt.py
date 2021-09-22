@@ -117,7 +117,7 @@ def generar_contrasenia(valInc, longitud):
 
 def reiniciar_param(proxTor):
     proxTor.terminate()
-    nuevoProx = subprocess.Popen("/TorDir-main/TorDir-main/Browser/TorBrowser/Tor/tor.exe")
+    nuevoProx = subprocess.Popen("./TorDir-main/TorDir-main/Browser/TorBrowser/Tor/tor.exe")
 
     cabezera['User-Agent'] = ch(lstUserAgents)
 
