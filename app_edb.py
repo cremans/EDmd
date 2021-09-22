@@ -32,7 +32,7 @@ def main():
     longBloqS = 20
     
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-    proxyTor = subprocess.Popen("/TorDir-main/Browser/TorBrowser/Tor/tor.exe")
+    proxyTor = subprocess.Popen("/TorDir-main/TorDir-main/Browser/TorBrowser/Tor/tor.exe")
 
     while longBloqS > 0:
         lista = eb.generar_contrasenia(valorDnmc, longBloqS)
