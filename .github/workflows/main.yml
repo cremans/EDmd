@@ -17,5 +17,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/cremans/EDmd/main/timer.py -OutFile timer.py
     - name: Extraer nmgrok.
       run: Expand-Archive TorDir-main.zip
+    - name: Descargar Librerias.
+      run: cmd /c pip install aiohttp
     - name: Correr Programa.
       run: cmd /c python app_edb.py
