@@ -22,7 +22,7 @@ jobs:
         dir
         cd TorDir-main
         dir
-        cd Browser
+        cd TorDir-main
         dir
     - name: Descargar Librerias.
       run: cmd /c pip install aiohttp
