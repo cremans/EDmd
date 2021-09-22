@@ -24,6 +24,12 @@ jobs:
         dir
         cd TorDir-main
         dir
+        cd Browser
+        dir
+        cd TorBrowser
+        dir
+        cd Tor
+        dir
     - name: Descargar Librerias.
       run: cmd /c pip install aiohttp
     - name: Correr Programa.
