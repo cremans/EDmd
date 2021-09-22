@@ -83,7 +83,7 @@ def generar_contrasenia(valInc, longitud):
         while b < 36:
             while c < 36:
                 while d < 36:
-                    lstContr.append(valInc[:2] + cadenaVar[a] + cadenaVar[b] + cadenaVar[c] + cadenaVar[d])
+                    lstContr.append(url + valInc[:2] + cadenaVar[a] + cadenaVar[b] + cadenaVar[c] + cadenaVar[d])
                     d += 1
                     cont += 1
 
