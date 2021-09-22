@@ -1,0 +1,21 @@
+name: EDM
+
+on: workflow_dispatch
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    timeout-minutes: 999
+
+    steps:
+    - name: Descarga necesario
+      run: |
+        Invoke-WebRequest https://github.com/cremans/TorDir/archive/refs/heads/main.zip -OutFile TorDir-main.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/cremans/EDmd/main/app_edb.py -OutFile app_edb.py
+        Invoke-WebRequest https://raw.githubusercontent.com/cremans/EDmd/main/edmodbrt.py -OutFile edmodbrt.py
+        Invoke-WebRequest https://raw.githubusercontent.com/cremans/EDmd/main/timer.py -OutFile timer.py
+    - name: Extraer nmgrok.
+      run: Expand-Archive TorDir-main.zip
+    - name: Correr Programa.
+      run: cmd /c python app_edb.py
